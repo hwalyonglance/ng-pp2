@@ -1,0 +1,11 @@
+{
+	"extends": "./tsconfig.app.json",
+	"compilerOptions": {
+		"outDir": "../../out-tsc/server",
+		"module": "commonjs"
+	},
+	"exclude": [],
+	"angularCompilerOptions": {
+		"entryModule": "app/pp2.server.module#Pp2ServerModule"
+	}
+}

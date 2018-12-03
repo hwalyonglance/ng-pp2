@@ -1,0 +1,17 @@
+{
+	"database": {
+		"rules": "database.rules.json"
+	},
+	"hosting": {
+		"public": "functions/public",
+		"rewrites": [
+			{
+				"source": "**",
+				"destination": "/index.html"
+			}
+		]
+	},
+	"functions": {
+		"predeploy": "npm --prefix functions run build"
+	}
+}

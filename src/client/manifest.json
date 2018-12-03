@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json.schemastore.org/web-manifest",
+  "short_name": "Angular PWA",
+  "name": "Rental Mobil",
+  "author": "Rusman Wahab",
+  "description": "Pesan Rental Mobil Secara Online",
+  "icons": [
+    {
+      "src": "assets/launcher-icon-2x.jpg",
+      "sizes": "96x96",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/angular144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/launcher-icon-4x.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "assets/launcher-icon-4x.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv7ZULSqbpKKQ1QP5Tb9f8g306PlY87OYYlXBrp7PlBHd/LJMUBDNWMCrWhpFR8sIjpvHjYipDr60j+2i7vj3PZlwbxZ7e3x+2A4cQt1LaC1PVZ6avnbsV0YMkFQi8H5f7NQiBKE2i2/Z/kB2r/DzyiUdGW63/sgjpBvgDCCMysHl3NWCnHqIOOtGD8SFlT5clgNJgVOgosFwHE4yYJDpIkvJ+nrLia9v6V/Cyc8ITEd0njvsp0q0aFJp332Ua/RPvh/m1UKcj8f3FNbaCrdScFzfKo5UNmifKLGhT377xhnvhOKuEJbyghNkPheMUquwVpTEHdRFMm7nVcLAt/kuZwIDAQAB",
+  "background_color": "#EEE",
+  "manifest_version": 1,
+  "minimum_chrome_version": "45",
+  "theme_color": "#1565c0",
+  "start_url": "./?utm_source=web_app_manifest",
+  "display": "standalone",
+  "offline_enabled": true,
+  "orientation": "any",
+  "version": "0.4.8"
+}

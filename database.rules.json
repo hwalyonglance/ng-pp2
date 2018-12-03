@@ -1,0 +1,16 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+
+    "uploads": {
+      ".write": true
+    },
+   "items": {
+      ".write": true
+    },
+    "users": {
+      ".write": true
+    }
+  }
+}

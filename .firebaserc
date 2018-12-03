@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "pak-pras",
+    "staging": "pak-pras"
+  }
+}

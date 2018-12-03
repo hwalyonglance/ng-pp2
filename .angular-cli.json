@@ -1,0 +1,89 @@
+{
+	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+	"project": {
+		"name": "pp2"
+	},
+	"apps": [
+		{
+			"root": "src/client",
+			"outDir": "functions/views",
+			"assets": [
+				"assets",
+				"favicon.ico",
+				"manifest.appcache",
+				"manifest.json",
+				"offline.html",
+				"robots.txt",
+				"sw.js",
+				{
+					"glob": "workbox-sw.prod.*",
+					"input": "../../node_modules/workbox-sw/build/importScripts/",
+					"output": "./"
+				}
+			],
+			"index": "index.html",
+			"main": "main.browser.ts",
+			"polyfills": "polyfills.ts",
+			"tsconfig": "tsconfig.app.json",
+			"prefix": "pp2",
+			"serviceWorker": false,
+			"styles": [
+				"styles.scss"
+			],
+			"scripts": [
+				"assets/js/jquery-3.2.1.min.js",
+				"assets/materialize/materialize.min.js"
+			],
+			"environmentSource": "environments/environment.ts",
+			"environments": {
+				"dev": "environments/environment.ts",
+				"prod": "environments/environment.prod.ts"
+			}
+		},
+		{
+			"name": "server",
+			"platform": "server",
+			"root": "src/client",
+			"outDir": "functions/src",
+			"main": "main.server.ts",
+			"tsconfig": "tsconfig.server.json",
+			"prefix": "pp2",
+			"environmentSource": "environment/environment.ts",
+			"environments": {
+				"dev": "environment.environment.ts",
+				"prod": "environment.environment.prod.ts"
+			}
+		}
+	],
+	"defaults": {
+		"build": {
+			"deleteOutputPath": false,
+			"commonChunk": false,
+			"outputHashing": "none"
+		},
+		"class": {
+			"spec": false
+		},
+		"component": {
+			"inlineStyle": true,
+			"inlineTemplate": false,
+			"spec": false
+		},
+		"directive": {
+			"spec": false
+		},
+		"guard": {
+			"spec": false
+		},
+		"module": {
+			"spec": false
+		},
+		"pipe": {
+			"spec": false
+		},
+		"service": {
+			"spec": false
+		},
+		"styleExt": "scss"
+	}
+}
