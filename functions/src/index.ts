@@ -31,12 +31,6 @@ const { Pp2ServerModuleNgFactory, Pp2ServerModule, LAZY_MODULE_MAP } = require('
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 
-function generatePDF(req, res) {
-
-}
-
-app.post('generate/pdf', generatePDF)
-
 app.engine('html', ngExpressEngine({
 	bootstrap: Pp2ServerModuleNgFactory,
 	providers: [
